@@ -1,0 +1,12 @@
+CREATE DATABASE bus_management;
+
+USE bus_management;
+
+CREATE TABLE buses (
+    bus_id INT AUTO_INCREMENT PRIMARY KEY,
+    bus_name VARCHAR(50) NOT NULL,
+    source VARCHAR(50) NOT NULL,
+    destination VARCHAR(50) NOT NULL,
+    total_seats INT NOT NULL,
+    booked_seats INT DEFAULT 0
+);
